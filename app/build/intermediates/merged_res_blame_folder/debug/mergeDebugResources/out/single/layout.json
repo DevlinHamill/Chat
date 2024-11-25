@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-mergeDebugResources-36:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-main-39:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.chat.app-mergeDebugResources-36:/layout/item_container_user.xml",
+        "source": "com.example.chat.app-main-39:/layout/item_container_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-mergeDebugResources-36:\\layout\\item_container_received_message.xml",
+        "source": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-main-39:\\layout\\item_container_received_message.xml"
+    },
+    {
+        "merged": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-mergeDebugResources-36:\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-main-39:\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-mergeDebugResources-36:\\layout\\activity_sign_in.xml",
+        "source": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-main-39:\\layout\\activity_sign_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-mergeDebugResources-36:\\layout\\activity_chat.xml",
+        "source": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-main-39:\\layout\\activity_chat.xml"
+    },
+    {
+        "merged": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-mergeDebugResources-36:\\layout\\item_container_user.xml",
+        "source": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-main-39:\\layout\\item_container_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-mergeDebugResources-36:\\layout\\activity_user.xml",
+        "source": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-main-39:\\layout\\activity_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-mergeDebugResources-36:\\layout\\item_container_sent_message.xml",
+        "source": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-main-39:\\layout\\item_container_sent_message.xml"
+    }
+]
