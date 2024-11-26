@@ -32,9 +32,14 @@ import java.util.HashMap;
  */
 
 public class MainActivity extends AppCompatActivity {
-
+    /**
+     * contains the binding for the mainactivity page
+     */
     private ActivityMainBinding binding;
 
+    /**
+     * contains the PrefrenceManger object to access the current user info
+     */
     private PreferenceManager preferenceManager;
 
     /**
@@ -53,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * sets the listeners for signing out and accessing a chat
+     */
     private void setListeners(){
         binding.imageSignOut.setOnClickListener(v -> signOut());
 
@@ -60,6 +68,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent( getApplicationContext(), userActivity.class )));
     }
 
+    /**
+     * loads the current users information such as name and images
+     */
     private void loadUserDetails(){
         binding.textName.setText(preferenceManager.getString(Constants.KEY_FIRST_NAME)+" "+ preferenceManager.getString(Constants.KEY_LAST_NAME));
         byte[] bytes = Base64.decode(preferenceManager.getString(Constants.KEY_IMAGE),Base64.DEFAULT);
@@ -67,16 +78,33 @@ public class MainActivity extends AppCompatActivity {
         binding.imageProfile.setImageBitmap(bitmap);
     }
 
+    /**
+     * shows a Toast message based on the current string input
+     * @param message String message that needs to be displayed
+     */
     public void showToast(String message){
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     * gets the FCM token
+     */
     public void getToken(){
         FirebaseMessaging.getInstance().getToken().addOnSuccessListener(this::updateToken);
     }
 
+    /**
+     * updates an existing FCM token
+     * @param token the new FCM token
+     */
     private void updateToken(String token){
+        /**
+         * Keeps track of the Firestore database connection
+         */
         FirebaseFirestore database = FirebaseFirestore.getInstance();
+        /**
+         * refrences specific data on the firebase
+         */
         DocumentReference documentReference = database.collection(Constants.KEY_COLLECTION_USERS)
                 .document(preferenceManager.getString(Constants.KEY_USER_ID));
         documentReference.update(Constants.KEY_FCM_TOKEN, token)
@@ -84,11 +112,23 @@ public class MainActivity extends AppCompatActivity {
                 .addOnFailureListener(e -> showToast("Unable to update Token"));
     }
 
+    /**
+     * signs out of the application
+     */
     private void signOut(){
         showToast("Signing out....");
+        /**
+         * Refrences the firestore database connection
+         */
         FirebaseFirestore database = FirebaseFirestore.getInstance();
+        /**
+         * Allows the firestore data to be read from
+         */
         DocumentReference documentReference = database.collection(Constants.KEY_COLLECTION_USERS)
                 .document(preferenceManager.getString(Constants.KEY_USER_ID));
+        /**
+         * stores all updates being made
+         */
         HashMap<String, Object> updates = new HashMap<>();
         updates.put(Constants.KEY_FCM_TOKEN, FieldValue.delete());
         documentReference.update(updates)

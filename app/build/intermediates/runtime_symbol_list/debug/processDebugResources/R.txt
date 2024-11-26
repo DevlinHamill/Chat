@@ -2134,6 +2134,7 @@ int color primary_text_default_material_dark 0x7f050305
 int color primary_text_default_material_light 0x7f050306
 int color primary_text_disabled_material_dark 0x7f050307
 int color primary_text_disabled_material_light 0x7f050308
+int color receive_message 0x7f05031b
 int color received_message_background 0x7f050309
 int color ripple_material_dark 0x7f05030a
 int color ripple_material_light 0x7f05030b

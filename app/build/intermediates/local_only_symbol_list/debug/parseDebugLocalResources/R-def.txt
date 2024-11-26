@@ -7,6 +7,7 @@ color icon_background
 color input_background
 color primary
 color primary_text
+color receive_message
 color received_message_background
 color secondary_text
 color white

@@ -42,19 +42,37 @@ public class Constants {
      * a global variable used to declare image data within the firebase
      */
     public static final String KEY_IMAGE = "image";
-
+    /**
+     * declares a global constant for an fcm token
+     */
     public static final String KEY_FCM_TOKEN = "fcmToken";
-
+    /**
+     * declares a global constant for a User
+     */
     public static final String KEY_USER = "User";
 
+    /**
+     * declares a global constant for a chat
+     */
     public static final String KEY_COLLECTION_CHAT = "chat";
 
+    /**
+     * declares a global constant for a senderID
+     */
     public static final String KEY_SENDER_ID = "senderID";
-
+    /**
+     * declares a global constant for a recieverID
+     */
     public static final String KEY_RECEIVER_ID = "receiverID";
 
+    /**
+     * declares a global constant for a message
+     */
     public static final String KEY_MESSAGE = "message";
 
+    /**
+     * declares a global constant for a timestamp
+     */
     public static final String KEY_TIMESTAMP = "timestamp";
 
 }

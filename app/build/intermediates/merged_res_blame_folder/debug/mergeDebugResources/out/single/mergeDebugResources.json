@@ -24,6 +24,10 @@
         "source": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-main-39:\\drawable\\background_sent_message.xml"
     },
     {
+        "merged": "com.example.chat.app-debug-37:/drawable_background_received_message.xml.flat",
+        "source": "com.example.chat.app-main-39:/drawable/background_received_message.xml"
+    },
+    {
         "merged": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-debug-37:\\layout_activity_sign_in.xml.flat",
         "source": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-main-39:\\layout\\activity_sign_in.xml"
     },
@@ -154,10 +158,6 @@
     {
         "merged": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-debug-37:\\drawable_ic_info.xml.flat",
         "source": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-main-39:\\drawable\\ic_info.xml"
-    },
-    {
-        "merged": "com.example.chat.app-debug-37:/layout_item_container_user.xml.flat",
-        "source": "com.example.chat.app-main-39:/layout/item_container_user.xml"
     },
     {
         "merged": "C:\\Users\\hamil\\.gradle\\daemon\\8.4\\com.example.chat.app-debug-37:\\layout_item_container_received_message.xml.flat",

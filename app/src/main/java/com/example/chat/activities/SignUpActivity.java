@@ -124,9 +124,11 @@ public class SignUpActivity extends AppCompatActivity {
                  loading(false);
 
                 preferenceManager.putBoolean(Constants.KEY_IS_SIGNED_IN, true);
+                preferenceManager.putString(Constants.KEY_USER_ID, documentReference.getId());
                 preferenceManager.putString(Constants.KEY_FIRST_NAME, binding.inputFirstName.getText().toString());
                 preferenceManager.putString(Constants.KEY_LAST_NAME, binding.inputLastName.getText().toString());
                 preferenceManager.putString(Constants.KEY_IMAGE, encodeImage);
+
                     /**
                      * This will be used to designate the certain activity the sign up page will be opening after a sucessful sign up
                      */
